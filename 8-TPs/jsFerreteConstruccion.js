@@ -36,13 +36,19 @@ function Materiales() {
     var metros_largo;
     var metros_ancho;
     var cantidad;
+    var cantidad1;
+    var cantidad2;
 
     metros_largo = parseInt (document.getElementById ("Largo").value);
-    matros_ancho = parseInt (document.getElementById ("Ancho").value);
+    metros_ancho = parseInt (document.getElementById ("Ancho").value);
 
-   cantidad = ( cemento & cal * metros_largo + matros_ancho);
-    
-   alert (cantidad);
+  cantidad = (metros_largo + metros_ancho); 
+
+   cantidad1 = (cantidad / cemento); 
+   cantidad2 = (cantidad / cal);
+
+
+   alert ( "Usted necesita " + cantidad1 + " de cemento y " + cantidad2 + " de cal" );
 
 
 }
