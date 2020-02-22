@@ -13,7 +13,7 @@ function Rectangulo() {
     metros_ancho = parseInt(document.getElementById("Ancho").value);
 
     cantidad = metros_ancho + metros_largo
-
+    cantidad = cantidad * 3
     alert("Usted tiene que comprar " + cantidad + " metros de alambre");
 
 }
